@@ -11,11 +11,12 @@ small protocol module the app uses to talk to it.
 The RetroNest app itself is a separate program that communicates with the core host only through
 the binder interface in `corehost-api`.
 
-This tree was exported from RetroNest commit `7820030bad59bd4ea8cc4e0bf9208920b142a52a`.
+This tree was exported from RetroNest commit `c1b726b1b3fed5f3de6debeab80a0f0a2dd81c43`.
 
 ## Cores
 
 The cores and the commits they were built from are listed in [SOURCES.md](SOURCES.md).
+The projects this work builds on are credited in [CREDITS.md](CREDITS.md).
 No core binary is part of this tree. To get them:
 
 - `scripts/fetch-cores.ps1` downloads the prebuilt cores and `libretro.h`.
