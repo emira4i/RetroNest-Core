@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core host (:corehost) user-visible texts: core load errors and host failures. -->
+    <string name="gameplay_engine_loading_core">Загрузка ядра…</string>
+    <string name="gameplay_engine_waiting">Ожидание закрытия предыдущей игры…</string>
+    <string name="gameplay_engine_loading_rom">Загрузка ROM…</string>
+    <string name="gameplay_engine_crashed">Эмуляция аварийно завершилась</string>
+    <string name="gameplay_engine_stopped">Эмуляция остановлена</string>
+    <string name="gameplay_engine_stopped_unexpectedly">Ядро неожиданно остановилось (состояние %1$d)</string>
+    <string name="gameplay_engine_game_closed">Игра закрыта</string>
+    <string name="gameplay_engine_game_closed_detail">Игра завершилась сама. Игровой прогресс сохранён.</string>
+    <string name="gameplay_engine_unknown_error">Неизвестная ошибка</string>
+    <string name="gameplay_engine_core_failed">Не удалось загрузить ядро</string>
+    <string name="gameplay_engine_files_failed">Не удалось подготовить файлы игры</string>
+    <string name="gameplay_engine_files_failed_detail">Проверь свободное место на устройстве и попробуй снова.</string>
+    <string name="gameplay_engine_rom_failed">Не удалось загрузить ROM</string>
+    <string name="gameplay_engine_gpu_failed">Сбой GPU-рендеринга</string>
+    <string name="gameplay_engine_gpu_failed_detail">Этой игре нужен GPU-рендеринг, но на этом устройстве он не заработал</string>
+    <string name="gameplay_host_start_failed">Не удалось запустить игру</string>
+    <string name="gameplay_host_missing_args">Отсутствуют параметры запуска</string>
+    <string name="gameplay_host_rom_share_failed">Не удалось открыть игру</string>
+    <string name="gameplay_host_rom_share_failed_detail">Не удалось передать файл ROM эмулятору</string>
+    <string name="gameplay_host_video_failed">Сбой вывода видео</string>
+    <string name="gameplay_host_video_failed_detail">GPU этого устройства не смог отрисовать игру.</string>
+
+    <string name="gameplay_host_busy_detail">Процесс эмулятора ещё завершается. Повторите попытку через несколько секунд.</string>
+</resources>

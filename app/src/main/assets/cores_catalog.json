@@ -1,0 +1,175 @@
+{
+  "cores": [
+    {
+      "id": "fceumm",
+      "cheats": true,
+      "displayName": "FCEUmm",
+      "libName": "libfceumm_libretro_android.so",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "systemIds": [
+        "nes"
+      ]
+    },
+    {
+      "id": "mgba",
+      "cheats": true,
+      "displayName": "mGBA",
+      "libName": "libmgba_libretro_android.so",
+      "license": "MPL-2.0",
+      "commercialUse": true,
+      "systemIds": [
+        "gb",
+        "gbc",
+        "gba"
+      ]
+    },
+    {
+      "id": "bsnes",
+      "source": "build",
+      "cheats": true,
+      "displayName": "bsnes",
+      "libName": "libbsnes_libretro_android.so",
+      "license": "GPL-3.0",
+      "commercialUse": true,
+      "systemIds": [
+        "snes"
+      ]
+    },
+    {
+      "id": "snes9x",
+      "cheats": true,
+      "displayName": "Snes9x",
+      "libName": "libsnes9x_libretro_android.so",
+      "license": "Non-commercial",
+      "commercialUse": false,
+      "systemIds": []
+    },
+    {
+      "id": "clownmdemu",
+      "cheats": false,
+      "displayName": "clownmdemu",
+      "libName": "libclownmdemu_libretro_android.so",
+      "license": "AGPL-3.0",
+      "commercialUse": true,
+      "systemIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "gearsystem",
+      "cheats": true,
+      "displayName": "Gearsystem",
+      "libName": "libgearsystem_libretro_android.so",
+      "license": "GPL-3.0",
+      "commercialUse": true,
+      "systemIds": [
+        "sms"
+      ]
+    },
+    {
+      "id": "genesis_plus_gx",
+      "cheats": true,
+      "displayName": "Genesis Plus GX",
+      "libName": "libgenesis_plus_gx_libretro_android.so",
+      "license": "Non-commercial",
+      "commercialUse": false,
+      "systemIds": []
+    },
+    {
+      "id": "stella",
+      "source": "build",
+      "cheats": false,
+      "displayName": "Stella",
+      "libName": "libstella_libretro_android.so",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "systemIds": [
+        "a2600"
+      ]
+    },
+    {
+      "id": "pcsx_rearmed",
+      "cheats": true,
+      "displayName": "PCSX ReARMed",
+      "libName": "libpcsx_rearmed_libretro_android.so",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "systemIds": [
+        "psx"
+      ]
+    },
+    {
+      "id": "melondsds",
+      "source": "build",
+      "cheats": false,
+      "displayName": "melonDS DS",
+      "libName": "libmelondsds_libretro_android.so",
+      "license": "GPL-3.0",
+      "commercialUse": true,
+      "systemIds": [
+        "nds"
+      ]
+    },
+    {
+      "id": "mame",
+      "displayName": "MAME",
+      "source": "build",
+      "libName": "libmame_libretro_android.so",
+      "license": "GPL-2.0-or-later",
+      "commercialUse": true,
+      "cheats": false,
+      "systemIds": [
+        "arcade",
+        "neogeo"
+      ]
+    },
+    {
+      "id": "mame2003_plus",
+      "cheats": false,
+      "displayName": "MAME 2003-Plus",
+      "libName": "libmame2003_plus_libretro_android.so",
+      "license": "MAME (non-commercial)",
+      "commercialUse": false,
+      "systemIds": [
+        "arcade",
+        "neogeo"
+      ]
+    },
+    {
+      "id": "mame2010",
+      "cheats": false,
+      "displayName": "MAME 2010",
+      "source": "build",
+      "libName": "libmame2010_libretro_android.so",
+      "license": "MAME (non-commercial)",
+      "commercialUse": false,
+      "systemIds": [
+        "arcade",
+        "neogeo"
+      ]
+    },
+    {
+      "id": "mupen64plus_next_gles3",
+      "cheats": true,
+      "displayName": "Mupen64Plus-Next",
+      "libName": "libmupen64plus_next_gles3_libretro_android.so",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "systemIds": [
+        "n64"
+      ]
+    },
+    {
+      "id": "ppsspp",
+      "cheats": false,
+      "displayName": "PPSSPP",
+      "libName": "libppsspp_libretro_android.so",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "systemIds": [
+        "psp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core host (:corehost) user-visible texts: core load errors and host failures. -->
+    <string name="gameplay_engine_loading_core">Loading core…</string>
+    <string name="gameplay_engine_waiting">Waiting for the previous game to close…</string>
+    <string name="gameplay_engine_loading_rom">Loading ROM…</string>
+    <string name="gameplay_engine_crashed">Emulation crashed</string>
+    <string name="gameplay_engine_stopped">Emulation stopped</string>
+    <string name="gameplay_engine_stopped_unexpectedly">The core stopped unexpectedly (state %1$d)</string>
+    <string name="gameplay_engine_game_closed">Game closed</string>
+    <string name="gameplay_engine_game_closed_detail">The game ended on its own. Your progress in the game has been kept.</string>
+    <string name="gameplay_engine_unknown_error">Unknown error</string>
+    <string name="gameplay_engine_core_failed">Failed to load core</string>
+    <string name="gameplay_engine_files_failed">Couldn\'t prepare the game files</string>
+    <string name="gameplay_engine_files_failed_detail">Check the free storage on the device and try again.</string>
+    <string name="gameplay_engine_rom_failed">Failed to load ROM</string>
+    <string name="gameplay_engine_gpu_failed">GPU rendering failed</string>
+    <string name="gameplay_engine_gpu_failed_detail">This game needs GPU rendering, which failed on this device</string>
+    <string name="gameplay_host_start_failed">Couldn\'t start the game</string>
+    <string name="gameplay_host_missing_args">Missing launch arguments</string>
+    <string name="gameplay_host_rom_share_failed">Couldn\'t open the game</string>
+    <string name="gameplay_host_rom_share_failed_detail">The ROM file could not be shared with the emulator</string>
+    <string name="gameplay_host_video_failed">Video output failed</string>
+    <string name="gameplay_host_video_failed_detail">This device\'s GPU could not draw the game.</string>
+
+    <string name="gameplay_host_busy_detail">The emulator process is still shutting down. Try again in a few seconds.</string>
+</resources>

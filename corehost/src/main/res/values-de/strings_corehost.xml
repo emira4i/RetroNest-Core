@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core host (:corehost) user-visible texts: core load errors and host failures. -->
+    <string name="gameplay_engine_loading_core">Core wird geladen…</string>
+    <string name="gameplay_engine_waiting">Warte, bis das vorherige Spiel geschlossen ist…</string>
+    <string name="gameplay_engine_loading_rom">ROM wird geladen…</string>
+    <string name="gameplay_engine_crashed">Emulation abgestürzt</string>
+    <string name="gameplay_engine_stopped">Emulation gestoppt</string>
+    <string name="gameplay_engine_stopped_unexpectedly">Der Core wurde unerwartet beendet (Status %1$d)</string>
+    <string name="gameplay_engine_game_closed">Spiel beendet</string>
+    <string name="gameplay_engine_game_closed_detail">Das Spiel hat sich selbst beendet. Dein Spielfortschritt bleibt erhalten.</string>
+    <string name="gameplay_engine_unknown_error">Unbekannter Fehler</string>
+    <string name="gameplay_engine_core_failed">Core konnte nicht geladen werden</string>
+    <string name="gameplay_engine_files_failed">Spieldateien konnten nicht vorbereitet werden</string>
+    <string name="gameplay_engine_files_failed_detail">Prüfe den freien Speicherplatz auf dem Gerät und versuche es noch einmal.</string>
+    <string name="gameplay_engine_rom_failed">ROM konnte nicht geladen werden</string>
+    <string name="gameplay_engine_gpu_failed">GPU-Rendering fehlgeschlagen</string>
+    <string name="gameplay_engine_gpu_failed_detail">Dieses Spiel benötigt GPU-Rendering, das auf diesem Gerät fehlgeschlagen ist</string>
+    <string name="gameplay_host_start_failed">Spiel konnte nicht gestartet werden</string>
+    <string name="gameplay_host_missing_args">Startparameter fehlen</string>
+    <string name="gameplay_host_rom_share_failed">Spiel konnte nicht geöffnet werden</string>
+    <string name="gameplay_host_rom_share_failed_detail">Die ROM-Datei konnte nicht mit dem Emulator geteilt werden</string>
+    <string name="gameplay_host_video_failed">Videoausgabe fehlgeschlagen</string>
+    <string name="gameplay_host_video_failed_detail">Die GPU dieses Geräts konnte das Spiel nicht darstellen.</string>
+
+    <string name="gameplay_host_busy_detail">Der Emulator-Prozess wird noch beendet. Versuche es in ein paar Sekunden erneut.</string>
+</resources>

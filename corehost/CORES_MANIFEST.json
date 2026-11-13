@@ -1,0 +1,280 @@
+{
+  "generated": "2026-11-13T00:15:45Z",
+  "abi": "arm64-v8a",
+  "cores": [
+    {
+      "id": "bsnes",
+      "file": "libbsnes_libretro_android.so",
+      "sizeBytes": 4752656,
+      "sha256": "34c66837105f254a5a7c475772fb2c109f9ad3da13ee157a865d701a894e0a80",
+      "modified": "2026-11-13T00:15:24Z",
+      "license": "GPL-3.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/libretro/bsnes-libretro",
+      "version": "115.1",
+      "commit": "b51612a74c4ff4b91aa55eb094940d9d848e0e96",
+      "commitSource": "local-build",
+      "notes": "Built locally by tools/cores/build_cores.sh from https://github.com/libretro/bsnes-libretro at the commit pinned in tools/cores/pins.json (ndk-build, android-ndk-r27d). The binary embeds the short commit b51612a (checked)."
+    },
+    {
+      "id": "clownmdemu",
+      "file": "libclownmdemu_libretro_android.so",
+      "sizeBytes": 736040,
+      "sha256": "2cd0575020597c4ad641156bda73fc2477dc61c5f80a05471d942d20538dea4e",
+      "modified": "2026-11-07T20:25:54Z",
+      "license": "AGPL-3.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/Clownacy/clownmdemu-libretro",
+      "version": "v1.6.12",
+      "commit": "d43c270",
+      "commitSource": "embedded-version-string"
+    },
+    {
+      "id": "fceumm",
+      "file": "libfceumm_libretro_android.so",
+      "sizeBytes": 2892768,
+      "sha256": "e3cb0e2bfb1642d13224a877b6e02007794343aa2f7bb4b28c2a54aa46add91b",
+      "modified": "2026-11-05T03:01:30Z",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/libretro/libretro-fceumm",
+      "version": "(SVN)",
+      "commit": "e0f3086",
+      "commitSource": "embedded-version-string"
+    },
+    {
+      "id": "gearsystem",
+      "file": "libgearsystem_libretro_android.so",
+      "sizeBytes": 873928,
+      "sha256": "cca03e72279738ef231727d2ffaaaf35ca56672aab6b8f90bba81cd101240361",
+      "modified": "2026-11-07T20:25:54Z",
+      "license": "GPL-3.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/drhelius/Gearsystem",
+      "version": "3.9.24-12-g1be9a12",
+      "commit": "1be9a12",
+      "commitSource": "embedded-version-string"
+    },
+    {
+      "id": "genesis_plus_gx",
+      "file": "libgenesis_plus_gx_libretro_android.so",
+      "sizeBytes": 11073976,
+      "sha256": "c01d7782bfdd6486710f42893138f5f521e7cd190c5c44fa2b5b76b79cc8639c",
+      "modified": "2026-11-06T12:09:33Z",
+      "license": "Non-commercial",
+      "commercialUse": false,
+      "shippedInRelease": false,
+      "upstream": "https://github.com/libretro/Genesis-Plus-GX",
+      "version": "v1.7.4",
+      "commit": "f27655b",
+      "commitSource": "embedded-version-string"
+    },
+    {
+      "id": "mame",
+      "file": "libmame_libretro_android.so",
+      "sizeBytes": 181837176,
+      "sha256": "fbd30c6ccf73bc9b91cc42238d11f3a135366f65b98ea1aa9c5d82adacf0e463",
+      "modified": "2026-11-08T16:15:33Z",
+      "license": "GPL-2.0-or-later",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/libretro/mame",
+      "version": "0.289",
+      "commit": "5f5a0774",
+      "commitSource": "local-build",
+      "notes": "Built locally from libretro/mame (MAME 0.289 driver subset) by tools/arcade/build_mame_current.sh, which clones libretro/mame at HEAD (--depth 1); the built-in version string carries the commit."
+    },
+    {
+      "id": "mame2003_plus",
+      "file": "libmame2003_plus_libretro_android.so",
+      "sizeBytes": 44193256,
+      "sha256": "8f456ca87b4cb9df0a7a963e679a3dd5ee72925a8c95d3c45a7f7bba536355c1",
+      "modified": "2026-11-07T13:42:10Z",
+      "license": "MAME (non-commercial)",
+      "commercialUse": false,
+      "shippedInRelease": false,
+      "upstream": "https://github.com/libretro/mame2003-plus-libretro",
+      "version": null,
+      "commit": null,
+      "commitSource": "unknown",
+      "notes": "No unambiguous commit in embedded strings. Candidate version-like strings seen: '4.27', '136014.168', '136014.191', 'NBA Jam TE Rewind ver 1.1', '1943.16', '1934.113', '3.30', '035143.02'."
+    },
+    {
+      "id": "mame2010",
+      "file": "libmame2010_libretro_android.so",
+      "sizeBytes": 67830576,
+      "sha256": "0d3da7def2d222d89c7c62b3530a040fe23d086303addf3154cba2b609b55d6f",
+      "modified": "2026-11-07T14:50:48Z",
+      "license": "MAME (non-commercial)",
+      "commercialUse": false,
+      "shippedInRelease": false,
+      "upstream": "https://github.com/libretro/mame2010-libretro",
+      "version": "0.139",
+      "commit": "dff8aad",
+      "commitSource": "local-build",
+      "notes": "Catalog marks this core source=build (built locally, not downloaded)."
+    },
+    {
+      "id": "melondsds",
+      "file": "libmelondsds_libretro_android.so",
+      "sizeBytes": 6098848,
+      "sha256": "cf319ac16b4f61a43b9cfb65fbfa555b9ee2a5a7ebdec0f86fb087929fa398db",
+      "modified": "2026-11-13T00:15:24Z",
+      "license": "GPL-3.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/JesseTG/melonds-ds",
+      "version": "1.4.0",
+      "commit": "f394adbacb5722ee97c1b37c8064da9a25818310",
+      "commitSource": "local-build",
+      "notes": "Built locally by tools/cores/build_cores.sh from https://github.com/JesseTG/melonds-ds at the commit pinned in tools/cores/pins.json (cmake, android-ndk-r29). The binary carries no commit string, so the pin can't be checked against it.",
+      "dependencies": [
+        {
+          "name": "MELONDS",
+          "repo": "https://github.com/JesseTG/melonDS",
+          "commit": "16f127dbb587a73371827ce79689c5d237c4b59b"
+        },
+        {
+          "name": "LIBRETRO_COMMON",
+          "repo": "https://github.com/libretro/libretro-common",
+          "commit": "fa8a1b572a444fcb552007019f8caf68281108aa"
+        },
+        {
+          "name": "EMBED_BINARIES",
+          "repo": "https://github.com/andoalon/embed-binaries",
+          "commit": "078b62beba97e8192c99bfb16d5e17220cfc7598"
+        },
+        {
+          "name": "GLM",
+          "repo": "https://github.com/g-truc/glm",
+          "commit": "6f14f4792a0cde5d0cf2c910506724d61cb95834"
+        },
+        {
+          "name": "LIBSLIRP",
+          "repo": "https://github.com/JesseTG/libslirp-mirror",
+          "commit": "e61dbd459c8c06607b3a84694489427e8ec60f17"
+        },
+        {
+          "name": "PNTR",
+          "repo": "https://github.com/robloach/pntr",
+          "commit": "a47fe167703b0ac3bfad00785b20b0dce6712509"
+        },
+        {
+          "name": "FMT",
+          "repo": "https://github.com/fmtlib/fmt",
+          "commit": "1be298e1bd68957e4cd352e1f676f00e07dcfb57"
+        },
+        {
+          "name": "YAMC",
+          "repo": "https://github.com/yohhoy/yamc",
+          "commit": "4e015a7e8eb0d61c34e6928676c8c78881a72d73"
+        },
+        {
+          "name": "SPAN_LITE",
+          "repo": "https://github.com/martinmoene/span-lite",
+          "commit": "f63fe2974943b5f555b928b10d910e457fbb93d4"
+        },
+        {
+          "name": "DATE",
+          "repo": "https://github.com/HowardHinnant/date",
+          "commit": "179a6b921ccd6179b5b04dce812a89f71a51b4df"
+        },
+        {
+          "name": "ZLIB",
+          "repo": "https://github.com/madler/zlib",
+          "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498"
+        }
+      ]
+    },
+    {
+      "id": "mgba",
+      "file": "libmgba_libretro_android.so",
+      "sizeBytes": 2472240,
+      "sha256": "b5a6ed40ede735ea7f1d56916f4ceed8c2aabe4d481fe3383ae2b5e5485b6545",
+      "modified": "2026-11-06T12:09:32Z",
+      "license": "MPL-2.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/mgba-emu/mgba",
+      "version": "0.11-212-7a12d6d",
+      "commit": "7a12d6d",
+      "commitSource": "embedded-version-string"
+    },
+    {
+      "id": "mupen64plus_next_gles3",
+      "file": "libmupen64plus_next_gles3_libretro_android.so",
+      "sizeBytes": 6203328,
+      "sha256": "4335b6b118873b04f7f752ed618e5690855def9263c6d4eaf2af366e647bc3c7",
+      "modified": "2026-11-07T15:10:47Z",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/libretro/mupen64plus-libretro-nx",
+      "version": "3.0-Vulkan",
+      "commit": "15bada8",
+      "commitSource": "embedded-version-string"
+    },
+    {
+      "id": "pcsx_rearmed",
+      "file": "libpcsx_rearmed_libretro_android.so",
+      "sizeBytes": 1586600,
+      "sha256": "17b0d8d2170a754478d64b3a9696e1dac96897d7ab7089974de60fe6b33e8ee6",
+      "modified": "2026-11-07T06:23:02Z",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/libretro/pcsx_rearmed",
+      "version": "r26l-137-g7b0e8f8",
+      "commit": "7b0e8f8",
+      "commitSource": "embedded-version-string"
+    },
+    {
+      "id": "ppsspp",
+      "file": "libppsspp_libretro_android.so",
+      "sizeBytes": 20508744,
+      "sha256": "ea59799bee5136a6a96bb8014eda95a4704531d34a350180ea9ebb17904526fb",
+      "modified": "2026-11-07T15:10:47Z",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/hrydgard/ppsspp",
+      "version": null,
+      "commit": "0acbc18",
+      "commitSource": "embedded-version-string",
+      "notes": "The core reports 'PPSSPP 0acbc18' at runtime (format 'PPSSPP %s' plus the embedded string '0acbc18'). On hrydgard/ppsspp that is 0acbc18824a673a1780088775f49df6d4cf5f2ef (2026-11-06)."
+    },
+    {
+      "id": "snes9x",
+      "file": "libsnes9x_libretro_android.so",
+      "sizeBytes": 3046344,
+      "sha256": "dfd51707769000b08551e61eee4fe1a68d9e6188d62bf849c762339fa6bebcd3",
+      "modified": "2026-11-06T12:09:33Z",
+      "license": "Non-commercial",
+      "commercialUse": false,
+      "shippedInRelease": false,
+      "upstream": "https://github.com/libretro/snes9x",
+      "version": "1.63",
+      "commit": "fae2fea",
+      "commitSource": "embedded-version-string"
+    },
+    {
+      "id": "stella",
+      "file": "libstella_libretro_android.so",
+      "sizeBytes": 6709488,
+      "sha256": "6bb71cfcdd6f7f7ebbbfd4046243ea29ce022c06f9a90b6cc82a5682394730fe",
+      "modified": "2026-11-13T00:15:24Z",
+      "license": "GPL-2.0",
+      "commercialUse": true,
+      "shippedInRelease": true,
+      "upstream": "https://github.com/stella-emu/stella",
+      "version": "8.0_pre",
+      "commit": "da5a002c318843bea1d233932508b9439798de0d",
+      "commitSource": "local-build",
+      "notes": "Built locally by tools/cores/build_cores.sh from https://github.com/stella-emu/stella at the commit pinned in tools/cores/pins.json (ndk-build, android-ndk-r29). The binary embeds the short commit da5a002 (checked)."
+    }
+  ]
+}

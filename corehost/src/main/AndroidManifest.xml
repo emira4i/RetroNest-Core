@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Rumble: the host vibrates the device on behalf of the core (normal permission, granted at install). -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- The emulation engine (native bridge + cores) runs in its own process, never in the app's. -->
+    <application>
+        <service
+            android:name=".CoreHostService"
+            android:exported="false"
+            android:process=":core" />
+        <!-- Same host in a second process: consecutive games alternate between the two, so a new session never
+             binds a process that is still shutting down (it is killed shortly after the last session ends). -->
+        <service
+            android:name=".CoreHostServiceAlt"
+            android:exported="false"
+            android:process=":core2" />
+    </application>
+</manifest>

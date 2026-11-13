@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core host (:corehost) user-visible texts: core load errors and host failures. -->
+    <string name="gameplay_engine_loading_core">Çekirdek yükleniyor…</string>
+    <string name="gameplay_engine_waiting">Önceki oyunun kapanması bekleniyor…</string>
+    <string name="gameplay_engine_loading_rom">ROM yükleniyor…</string>
+    <string name="gameplay_engine_crashed">Emülasyon çöktü</string>
+    <string name="gameplay_engine_stopped">Emülasyon durdu</string>
+    <string name="gameplay_engine_stopped_unexpectedly">Çekirdek beklenmedik şekilde durdu (durum %1$d)</string>
+    <string name="gameplay_engine_game_closed">Oyun kapandı</string>
+    <string name="gameplay_engine_game_closed_detail">Oyun kendiliğinden sona erdi. Oyun içi ilerlemen korundu.</string>
+    <string name="gameplay_engine_unknown_error">Bilinmeyen hata</string>
+    <string name="gameplay_engine_core_failed">Çekirdek yüklenemedi</string>
+    <string name="gameplay_engine_files_failed">Oyun dosyaları hazırlanamadı</string>
+    <string name="gameplay_engine_files_failed_detail">Cihazdaki boş depolama alanını kontrol et ve tekrar dene.</string>
+    <string name="gameplay_engine_rom_failed">ROM yüklenemedi</string>
+    <string name="gameplay_engine_gpu_failed">GPU işleme başarısız oldu</string>
+    <string name="gameplay_engine_gpu_failed_detail">Bu oyun GPU işleme gerektiriyor, ancak bu cihazda başarısız oldu</string>
+    <string name="gameplay_host_start_failed">Oyun başlatılamadı</string>
+    <string name="gameplay_host_missing_args">Başlatma bilgileri eksik</string>
+    <string name="gameplay_host_rom_share_failed">Oyun açılamadı</string>
+    <string name="gameplay_host_rom_share_failed_detail">ROM dosyası emülatörle paylaşılamadı</string>
+    <string name="gameplay_host_video_failed">Görüntü çıkışı başarısız oldu</string>
+    <string name="gameplay_host_video_failed_detail">Bu cihazın GPU\'su oyunu çizemedi.</string>
+
+    <string name="gameplay_host_busy_detail">Emülatör süreci hâlâ kapanıyor. Birkaç saniye sonra tekrar deneyin.</string>
+</resources>
