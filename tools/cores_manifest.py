@@ -11,6 +11,15 @@ are listed in "notes". Nothing is guessed.
 Cores listed in tools/cores/pins.json are built by tools/cores/build_cores.sh from a pinned upstream
 commit: their commit is the pinned full SHA (commitSource "local-build"). OVERRIDES records a commit
 that the generic patterns can't parse; it is accepted only when its proof string is in the binary.
+
+The arcade cores (ARCADE_CORES) count as shipped only while the `retronest.arcade` build property is on;
+otherwise app/build.gradle.kts leaves them out of every APK. The property is read the way Gradle reads it,
+minus the command line: GRADLE_USER_HOME (or ~/.gradle) gradle.properties, the project gradle.properties,
+then local.properties. The value used is stored as "arcadeEnabled"; tools/ci.sh checks it against the
+current setting, so toggling the property means regenerating this manifest.
+
+    python tools/cores_manifest.py                   regenerate corehost/CORES_MANIFEST.json
+    python tools/cores_manifest.py --arcade-setting  only print the current setting (true / false)
 """
 import datetime
 import hashlib
@@ -28,6 +37,37 @@ SUFFIX = "_libretro_android.so"
 
 SHIPPED = {"fceumm", "mgba", "bsnes", "clownmdemu", "gearsystem", "stella", "pcsx_rearmed",
            "melondsds", "mupen64plus_next_gles3", "ppsspp", "mame"}
+# Packaged only while the retronest.arcade build property is on (must match arcadeCores in app/build.gradle.kts).
+ARCADE_CORES = {"mame", "mame2003_plus", "mame2010"}
+ARCADE_PROPERTY = "retronest.arcade"
+
+
+def read_property(path, key):
+    """Value of [key] in a Java .properties file (simple key=value / key: value lines), or None."""
+    try:
+        lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError:
+        return None
+    value = None
+    for line in lines:
+        line = line.strip()
+        if not line or line[0] in "#!":
+            continue
+        m = re.match(r"([^=:\s]+)\s*[=:]\s*(.*)$", line)
+        if m and m.group(1) == key:
+            value = m.group(2).strip()
+    return value
+
+
+def arcade_enabled():
+    """Same resolution as app/build.gradle.kts: a Gradle property wins, then local.properties; default off."""
+    import os
+    gradle_home = Path(os.environ.get("GRADLE_USER_HOME") or Path.home() / ".gradle")
+    for path in (gradle_home / "gradle.properties", ROOT / "gradle.properties", ROOT / "local.properties"):
+        value = read_property(path, ARCADE_PROPERTY)
+        if value is not None:
+            return value.lower() == "true"
+    return False
 
 # Upstream repos (each verified to exist with an HTTP request; see report). None = unverified.
 UPSTREAM = {
@@ -156,6 +196,12 @@ def overridden(core_id, data):
 
 def main():
     global PIN_NDK
+    if sys.argv[1:] == ["--arcade-setting"]:
+        print("true" if arcade_enabled() else "false")
+        return
+    if sys.argv[1:]:
+        sys.exit("usage: python tools/cores_manifest.py [--arcade-setting]")
+    arcade = arcade_enabled()
     if not LIBS.is_dir() or not list(LIBS.glob("*.so")):
         sys.exit(f"error: no .so files in {LIBS}")
     catalog = {c["id"]: c for c in json.loads(CATALOG.read_text(encoding="utf-8"))["cores"]}
@@ -187,7 +233,7 @@ def main():
                         .strftime("%Y-%m-%dT%H:%M:%SZ"),
             "license": cat.get("license"),
             "commercialUse": cat.get("commercialUse"),
-            "shippedInRelease": core_id in SHIPPED,
+            "shippedInRelease": core_id in SHIPPED and (arcade or core_id not in ARCADE_CORES),
             "upstream": pins[core_id]["repo"] if core_id in pins else UPSTREAM.get(core_id),
             "version": version,
             "commit": commit,
@@ -201,10 +247,11 @@ def main():
     manifest = {
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "abi": "arm64-v8a",
+        "arcadeEnabled": arcade,
         "cores": cores,
     }
     OUT.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-    print(f"wrote {OUT} ({len(cores)} cores)")
+    print(f"wrote {OUT} ({len(cores)} cores, arcade {'on' if arcade else 'off'})")
 
 
 if __name__ == "__main__":

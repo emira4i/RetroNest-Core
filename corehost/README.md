@@ -24,9 +24,6 @@ Needs the Android SDK with NDK 30.0.15729638 and CMake 4.1.2 (see `build.gradle.
 - `scripts/setup-phase1.ps1` fetches `libretro.h`; `scripts/fetch-cores.ps1` downloads the prebuilt cores listed in the app's
   core catalog into `corehost/libs/arm64-v8a/`.
 - Self-built cores (Linux / WSL, see the header of each script for what it needs):
-  - `tools/arcade/build_mame2010.sh <work dir>` builds MAME 2010 into `corehost/libs/arm64-v8a/`.
-  - `tools/arcade/build_mame_current.sh [work dir]` builds a driver subset of current MAME (GPL-2.0+); copy the output to
-    `corehost/libs/arm64-v8a/libmame_libretro_android.so`.
   - `tools/cores/build_cores.sh [core id ...]` builds bsnes, Stella and melonDS DS from the upstream commits pinned in
     `tools/cores/pins.json` (GPL corresponding source); copy the outputs from `~/rn/cores/out/` here.
 - `python tools/cores_manifest.py` regenerates `CORES_MANIFEST.json` (each core's upstream commit).

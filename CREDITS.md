@@ -23,7 +23,6 @@ The exact commits are in [SOURCES.md](SOURCES.md).
 | clownmdemu | https://github.com/Clownacy/clownmdemu-libretro | AGPL-3.0 |
 | fceumm | https://github.com/libretro/libretro-fceumm | GPL-2.0 |
 | gearsystem | https://github.com/drhelius/Gearsystem | GPL-3.0 |
-| mame | https://github.com/libretro/mame | GPL-2.0-or-later |
 | melondsds | https://github.com/JesseTG/melonds-ds | GPL-3.0 |
 | mgba | https://github.com/mgba-emu/mgba | MPL-2.0 |
 | mupen64plus_next_gles3 | https://github.com/libretro/mupen64plus-libretro-nx | GPL-2.0 |

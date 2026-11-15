@@ -11,7 +11,7 @@ small protocol module the app uses to talk to it.
 The RetroNest app itself is a separate program that communicates with the core host only through
 the binder interface in `corehost-api`.
 
-This tree was exported from RetroNest commit `c1b726b1b3fed5f3de6debeab80a0f0a2dd81c43`.
+This tree was exported from RetroNest commit `0b4396a7fd90a5e0f9e1bfcbd4b10a3794ebefc8`.
 
 ## Cores
 
@@ -22,7 +22,6 @@ No core binary is part of this tree. To get them:
 - `scripts/fetch-cores.ps1` downloads the prebuilt cores and `libretro.h`.
 - `tools/cores/build_cores.sh` builds bsnes, Stella and melonDS DS from the commits in
   `tools/cores/pins.json` (Linux, Android NDK).
-- `tools/arcade/build_mame_current.sh` builds the arcade core (Linux, Android NDK).
 
 Binaries go to `corehost/libs/arm64-v8a/`.
 

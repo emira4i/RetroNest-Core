@@ -1,6 +1,7 @@
 {
-  "generated": "2026-11-13T00:15:45Z",
+  "generated": "2026-11-14T01:16:06Z",
   "abi": "arm64-v8a",
+  "arcadeEnabled": false,
   "cores": [
     {
       "id": "bsnes",
@@ -72,51 +73,6 @@
       "version": "v1.7.4",
       "commit": "f27655b",
       "commitSource": "embedded-version-string"
-    },
-    {
-      "id": "mame",
-      "file": "libmame_libretro_android.so",
-      "sizeBytes": 181837176,
-      "sha256": "fbd30c6ccf73bc9b91cc42238d11f3a135366f65b98ea1aa9c5d82adacf0e463",
-      "modified": "2026-11-08T16:15:33Z",
-      "license": "GPL-2.0-or-later",
-      "commercialUse": true,
-      "shippedInRelease": true,
-      "upstream": "https://github.com/libretro/mame",
-      "version": "0.289",
-      "commit": "5f5a0774",
-      "commitSource": "local-build",
-      "notes": "Built locally from libretro/mame (MAME 0.289 driver subset) by tools/arcade/build_mame_current.sh, which clones libretro/mame at HEAD (--depth 1); the built-in version string carries the commit."
-    },
-    {
-      "id": "mame2003_plus",
-      "file": "libmame2003_plus_libretro_android.so",
-      "sizeBytes": 44193256,
-      "sha256": "8f456ca87b4cb9df0a7a963e679a3dd5ee72925a8c95d3c45a7f7bba536355c1",
-      "modified": "2026-11-07T13:42:10Z",
-      "license": "MAME (non-commercial)",
-      "commercialUse": false,
-      "shippedInRelease": false,
-      "upstream": "https://github.com/libretro/mame2003-plus-libretro",
-      "version": null,
-      "commit": null,
-      "commitSource": "unknown",
-      "notes": "No unambiguous commit in embedded strings. Candidate version-like strings seen: '4.27', '136014.168', '136014.191', 'NBA Jam TE Rewind ver 1.1', '1943.16', '1934.113', '3.30', '035143.02'."
-    },
-    {
-      "id": "mame2010",
-      "file": "libmame2010_libretro_android.so",
-      "sizeBytes": 67830576,
-      "sha256": "0d3da7def2d222d89c7c62b3530a040fe23d086303addf3154cba2b609b55d6f",
-      "modified": "2026-11-07T14:50:48Z",
-      "license": "MAME (non-commercial)",
-      "commercialUse": false,
-      "shippedInRelease": false,
-      "upstream": "https://github.com/libretro/mame2010-libretro",
-      "version": "0.139",
-      "commit": "dff8aad",
-      "commitSource": "local-build",
-      "notes": "Catalog marks this core source=build (built locally, not downloaded)."
     },
     {
       "id": "melondsds",
